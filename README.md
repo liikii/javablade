@@ -70,6 +70,7 @@ mvn compile
 mvn package
 mvn install assembly:assembly
 java -cp target/app-jar-with-dependencies.jar company.App
+java -cp app-jar-with-dependencies.jar company.App
 ```
 
 
