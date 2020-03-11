@@ -8,6 +8,6 @@ public class App
     //        System.out.println("Hello Wuhan!");
 //        String a = "{\"errorCode\": \"\", \"data\": {\"message\": \"Chairman Mao Longevity\", \"request_info\": \"Chairman Mao Longevity\"}, \"success\": true, \"errorMessage\": \"\"}";
 //        Blade.of().get("/hello_java", ctx -> ctx.json(a)).start();
-        Blade.of().start(App.class, args);
+        Blade.of().listen(9002).start(App.class, args);
     }
 }
