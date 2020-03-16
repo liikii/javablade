@@ -10,4 +10,28 @@ public class IndexRouter {
         res.header("X-Powered-By", "httpd");
         res.json("{\"a\": \"b\"}");
     }
+
+    @GetRoute("/save")
+    public void get_save(Response res){
+        res.header("X-Powered-By", "httpd");
+        res.json("{\"get get\": \"i'm save\"}");
+    }
+
+    @PostRoute("/save")
+    public void post_save(Response res){
+        res.header("X-Powered-By", "httpd");
+        res.json("{\"post post\": \"i'm post\"}");
+    }
+
+    @GetRoute("/hello")
+    public void get_hello(Response res){
+        res.header("X-Powered-By", "httpd");
+        res.json("{\"get get \": \"get hello\"}");
+    }
+
+    @PostRoute("/hello")
+    public void post_hello(Response res){
+        res.header("X-Powered-By", "httpd");
+        res.json("{\"post post\": \"post hello\"}");
+    }
 }
